@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Николай Дугин](https://up.htmlacademy.ru/adaptive/28/user/2294865).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
