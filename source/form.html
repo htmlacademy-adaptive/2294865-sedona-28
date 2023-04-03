@@ -47,7 +47,7 @@
   <main class="main-container">
     <section class="hero">
       <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
-      <img class="hero__image" src="./img/SEDONA.svg" width="229" height="39"
+      <img class="hero__image" src="./img/sedona.svg" width="229" height="39"
         alt="Welcome to the gorgeous Sedona because the grand canyon sucks.">
     </section>
 
@@ -73,21 +73,17 @@
               required>
           </fieldset>
 
-          <fieldset class="main-form__contacts main-form__registration">
+          <fieldset class="main-form__contacts contacts-detail main-form__registration">
             <legend class="main-form__title contacts-detail__title">Контактная информация:</legend>
-            <label class="contacts-detail__lable contacts-details__label--phone" for="phone">
-              <span class="contacts-detail__text">Контактный телефон:</span>
-              <input class="contacts-detail__input input" type="tel" id="phone" name="phone"
-                placeholder="Введите телефон" required>
-            </label>
-            <legend class="main-form__title contacts-detail__title">"Электронная почта":</legend>
-            <label class="contacts-detail__lable contacts-details__label--email" for="email">
-              <span class="contacts-detail__text">Контактный телефон:</span>
-              <input class="contacts-detail__input input" type="email" id="email" name="email"
-                placeholder="Введите e-mail" required>
-            </label>
+            <label class="contacts-detail__lable contacts-detail__label--phone" for="phone">Контактный телефон:</label>
+            <input class="contacts-detail__input input" type="tel" id="phone" name="phone" placeholder="Введите телефон"
+              required>
+            <label class="contacts-detail__label contacts-detail__label--email" for="email"> электронная почта*:</label>
+            <input class="contacts-detail__input input" type="email" id="email" name="email"
+              placeholder="Введите e-mail" required>
           </fieldset>
         </div>
+
         <fieldset class="main-form__oppinion oppinion main-form__registration">
           <legend class="main-form__title oppinion__title">Ваше общее впечатление </legend>
           <div class="oppinion__container">
@@ -135,7 +131,7 @@
             placeholder="Опишите подробно все свои восторги"></textarea> <!--rows поставил примерно-->
         </fieldset>
         <div class="main-form__button">
-          <button class="main-form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <button class="main-form__button" type="submit">Отправить отзыв</button>
           <p class="main-form__rule">* — обязательные поля</p>
         </div>
       </form>
@@ -143,7 +139,8 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__container">
+    <section class="main-footer__social social">
+      <h2 class="visually-hidden">Социальные сети.</h2>
       <section class="main-footer__span">
         <h2 class="visually-hidden">Приезжайте в Седону.</h2>
         <span class="main-footer__heshtag">#VisitSedona</span>
@@ -169,13 +166,13 @@
           </li>
         </ul>
       </section>
-      <section class="main-footer_copyright copyright">
+      <section class="main-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <!--Тут будет svg картинка-->
         </a>
       </section>
-    </div>
+      </div>
   </footer>
 </body>
 
