@@ -4,6 +4,13 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  color: @font-color-black;
+  margin: 0;
+  text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    color: @font-color-white;
+  }
 }
 
 .card__author {
@@ -12,4 +19,36 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+
+.card__link {
+  .link-style-reset();
+}
+
+.card__discription-container {    //тут меняется цвет в зависимости от устройства
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;  //пока так потом variables добавлю
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @font-color-black;
+    opacity: 0.3;
+    color: @font-color-white;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.card__title-container {   //контейнер с описаниями к фотографиям
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card__button-container {   //контейнер с кнопкой
+  display: flex;
+  align-items: center;
 }

@@ -1,5 +1,4 @@
 .main-nav {
-  display: inline-block;
   background-color: @body-color-white;
 }
 
@@ -16,13 +15,12 @@
 
 .main-nav__container {
   position: absolute;
-  min-width: 320px;
+  min-width: 100%;
   min-height: 223px;
   background-color: @base-color-blue;
-  // display:none;
+  //display: none;
 
   @media (min-width: @tablet-width) {
-    display: flex;
     position: static;
     width: 768px;
     min-height: 56px;
