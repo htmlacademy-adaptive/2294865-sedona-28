@@ -21,21 +21,25 @@
 
 .gallery__list {
   .list-reset();
+  max-width: 280px;
+  margin: auto;
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 648px repeat(3, 324px); //или лучше использовать fr?
+    max-width: 648px;
+    grid-template-columns: repeat(2, 324px); //или лучше использовать fr?
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 1200px repeat(3, 400px);
+    max-width: 1200px;
+    grid-template-columns: repeat(3, 400px);
   }
 }
 
 .gallery__item:first-child {
   @media (min-width: @tablet-width) {
-    grid-column: ~"1 / -2";   //тут нужна помощь почти получилось выровнять
+    grid-column: ~"1 / -1";   //тут нужна помощь почти получилось выровнять
   }
 }
 
