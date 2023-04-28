@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,36 +13,32 @@
     <a class="main-header__logo" href="#">
       <img src="./img/logo.png" width="185" height="96" alt="Логотип Седоны.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню навигации</span>
       </button>
-      <div class="main-nav__container">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Фото и Видео
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link" href="form.html">
-              Форма и Отзывы
-            </a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link" href="#">
-              HTMLACADEMY
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--current">
+          <a class="site-list__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">
+            Фото и Видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">
+            Форма и Отзывы
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">
+            HTMLACADEMY
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
@@ -58,14 +55,14 @@
       <p class="advantages__discription">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
       <ol class="advantages__list">
-        <li class="advantages__item  services">
+        <li class="advantages__item  advantages__item--image  services">
           <div class="advantages__container advantages__container--blue">
             <h3 class="advantages__title advantages__title--white">Настоящий городок</h3>
             <span class="advantages__number advantages__number--white">— №1 —</span>
             <p class="advantages__discription advantages__discription--white">Седона — не аттракцион для туристов, там
               течёт своя жизнь</p>
-            <img class="advantages__image" src="./img/city-pic.jpg" width="520" height="260" alt="Вид городка">
           </div>
+          <img class="advantages__image" src="./img/city-pic.jpg" width="520" height="260" alt="Вид городка">
           <ul class="services__list">
             <li class="services__item">
               <div class="services__container">
@@ -88,30 +85,31 @@
           </ul>
         </li>
 
-        <li class="advantages__item">
-          <div class="advantages__container advantages__container--blue">
+        <li class="advantages__item  advantages__item--image">
+          <div class="advantages__container  advantages__container--blue  advantages__container--reverse">
             <h3 class="advantages__title advantages__title--white">Там есть мост дьявола</h3>
             <span class="advantages__number advantages__number--white">— №2 —</span>
-            <p class="advantages__discription advantages__discription--white">Да, по нему можно пройти! Если вы осмелитесь,конечно</p>
-            <img class="advantages__image" src="./img/grandc-pic.jpg" width="520" height="260" alt="Вид городка">
+            <p class="advantages__discription advantages__discription--white">Да, по нему можно пройти! Если вы
+              осмелитесь,конечно</p>
           </div>
+          <img class="advantages__image  advantages__image--reverse" src="./img/grandc-pic.jpg" width="520" height="260" alt="Вид городка">
         </li>
 
-        <li class="advantages__item advantages__item--grey">
+        <li class="advantages__item  advantages__item--grey">
           <div class="advantages__container">
             <h3 class="advantages__title">Небольшая площадь</h3>
             <span class="advantages__number">— №3 —</span>
             <p class="advantages__discription">Все интересные места находятся очень близко</p>
           </div>
         </li>
-        <li class="advantages__item advantages__item--grey">
+        <li class="advantages__item  advantages__item--grey">
           <div class="advantages__container">
             <h3 class="advantages__title">Красивая дорога</h3>
             <span class="advantages__number">— №4 —</span>
             <p class="advantages__discription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
-        <li class="advantages__item advantages__item--grey">
+        <li class="advantages__item  advantages__item--grey">
           <div class="advantages__container">
             <h3 class="advantages__title">Мало туристов</h3>
             <span class="advantages__number">— №5 —</span>
@@ -128,7 +126,7 @@
         в Седоне</p>
       <a class="map__link" href="catalog.html"> Найти гостиницу </a> <!--Тут ссылка или кнопка?-->
       <!--Пока оставлю картинку-->
-      <img src="./img/map-mobile.jpg" width="320" height="350" alt="Карта.">
+      <img class="map__link-image" src="./img/map-mobile.jpg" width="320" height="350" alt="Карта.">
     </section>
   </main>
 

@@ -1,9 +1,14 @@
+.gallery {
+  text-align: center;
+}
+
 .gallery__title {
   font-family: "PT Sans" "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-transform: uppercase;
 }
 
 .gallery__discription {
@@ -16,4 +21,36 @@
 
 .gallery__list {
   .list-reset();
+  max-width: 280px;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    max-width: 648px;
+    grid-template-columns: repeat(2, 324px); //или лучше использовать fr?
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(3, 400px);
+  }
+}
+
+.gallery__item:first-child {
+  @media (min-width: @tablet-width) {
+    grid-column: ~"1 / -1";   //тут нужна помощь почти получилось выровнять
+  }
+}
+
+.gallery__item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }

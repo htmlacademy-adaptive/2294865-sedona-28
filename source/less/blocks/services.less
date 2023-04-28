@@ -1,5 +1,5 @@
 .services__title {
-  font-family: "PT Sans" "Arial", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -7,7 +7,7 @@
 }
 
 .services__discription {
-  font-family: "PT Sans" "Arial", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -16,4 +16,16 @@
 
 .services__list {
   .list-reset();
+  background-color: @base-color-white-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: flex;
+    grid-column: ~ "1/-1";
+  }
+}
+
+.services__item {
+  background-color: @base-color-white-grey;
+  width: 100%;
 }
