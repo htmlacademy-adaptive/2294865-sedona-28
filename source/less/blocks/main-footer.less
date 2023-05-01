@@ -4,9 +4,59 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    width: 190px;
+    margin-right: auto;
+    text-align: left;
+  }
 }
 
 .main-footer {
   color: @font-color-black;
   background-color: @base-color-white;
+}
+
+.main-footer__container {
+  padding: 33px 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 36px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.main-footer__copyright {
+  margin: 0;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+}
+
+.main-footer__social {
+  margin: 0;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
 }

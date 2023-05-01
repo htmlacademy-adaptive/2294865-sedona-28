@@ -1,4 +1,48 @@
+.social__list {
+  .list-reset();
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
+}
 
 .social__item {
-  .list-reset();
+  .footer-contacts__item {
+    margin-right: 6px;
+    margin-bottom: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: @base-color-blue;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vkontakte {
+    background-image: url("../img/vk.svg");
+  }
+
+  &--telegram {
+    background-image: url("../img/tg.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/youtube.svg");
+  }
 }
