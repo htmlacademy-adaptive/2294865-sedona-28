@@ -4,6 +4,21 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+  }
+
+  &--home::after {
+    width: 39px;
+    height: 37px;
+    background-image: url("../img/icon-house.svg");
+  }
 }
 
 
