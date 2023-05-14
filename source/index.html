@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicon/favicon.png">
+  <link rel="apple-touch-icon" href="./img/favicon/apple.png">
 </head>
 
 <body class="page__body">
@@ -62,7 +65,12 @@
               <p class="advantages__discription advantages__discription--white">Седона — не аттракцион для туристов, там
                 течёт своя жизнь</p>
             </div>
-            <img class="advantages__image" src="./img/city-pic.jpg" width="520" height="260" alt="Вид городка">
+            <picture class="advantages__picture">
+              <source media="(min-width: 1200px)" srcset="./img/advantages/desktop-photo-city@1x.jpg 1x, ./img/advantages/desktop-photo-city@2x.jpg 2x">
+              <source media="(min-width 768px)" srcset="./img/advantages/tablet-photo-city.jpg 1x ./img/advantages/tablet-photo-city@2x.jpg 2x">
+            <img class="advantages__image" src="./img/advantages/mobile-photo-city.jpg" srcset="./img/advantages/mobile-photo-city@2x.jpg" width="320" height="260" alt="Вид городка">
+          </picture>
+
             <ul class="services__list">
               <li class="services__item  services__item--home">
                 <div class="services__container">
@@ -92,8 +100,12 @@
               <p class="advantages__discription advantages__discription--white">Да, по нему можно пройти! Если вы
                 осмелитесь,конечно</p>
             </div>
-            <img class="advantages__image  advantages__image--reverse" src="./img/grandc-pic.jpg" width="520"
-              height="260" alt="Вид городка">
+
+            <picture  class="advantages__picture">
+              <source media="(min-width: 1200px)" srcset="./img/advantages/desktop-photo-bridge.jpg 1x, ../img/advantages/desktop-photo-bridge@2x.jpg 2x">
+              <source media="(min-width 768px)" srcset="./img/advantages/tablet-photo-bridge@1x 1x ../img/advantages/tablet-photo-bridge@2x.jpg 2x">
+            <img class="advantages__image  advantages__image--reverse" src="./img/advantages/mobile-photo-bridge@1x.jpg" srcset="./img/advantages/mobile-photo-bridge@2x.jpg 2x" width="320" height="260" alt="Вид городка">
+          </picture>
           </li>
 
           <li class="advantages__item  advantages__item--grey  advantages__item--border">
