@@ -1,6 +1,18 @@
 .review {
   text-align: center;
   box-sizing: border-box;
+  padding-top: 20px;
+  border-bottom: solid 1px #e5e5e5;
+
+
+  @media (min-width: @tablet-width) {
+    padding: 44px 166px 97px 158px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .review__title {
@@ -9,6 +21,17 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 89px 166px 66px 164px;
+  }
 }
 
 .review__discription {
@@ -17,4 +40,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 25px auto 27px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    line-height: 24px;
+    margin: 0;
+  }
 }

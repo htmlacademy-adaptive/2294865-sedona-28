@@ -4,4 +4,36 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  background-color: @font-color-grey-white;
+  border: none;
+  width: 280px;
+  box-sizing: border-box;
+  padding: 15px 17px 9px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    padding: 15px 16px 18px;
+    margin-top: 9px;
+    font-weight: 700;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
+}
+
+.emotions__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: -4px;
+  margin-top: 0;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 4px auto 20px;
+    font-size: 21px;
+  }
 }

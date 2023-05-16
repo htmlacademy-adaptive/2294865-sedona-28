@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicon/favicon.png">
   <link rel="apple-touch-icon" href="./img/favicon/apple.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -64,7 +65,7 @@
         <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="main-form__container">
             <fieldset class="main-form__registration main-form__name">
-              <legend class="main-form__title">Представьтесь:</legend>
+              <legend class="main-form__title  main-form__represent">Представьтесь:</legend>
               <p class="main-form__labelcontainer">
                 <label class="main-form__label" for="name">Имя*:</label>
                 <input class="main-form__input input" type="text" id="name" name="name" placeholder="Пётр" required>
@@ -95,41 +96,47 @@
           </div>
 
           <fieldset class="main-form__oppinion oppinion main-form__registration">
-            <legend class="main-form__title oppinion__title">Ваше общее впечатление </legend>
+            <legend class="main-form__title oppinion__title">Ваше общее впечатление: </legend>
             <div class="oppinion__container">
               <label class="oppinion__label">
-                <input class="oppinion__input" type="radio" name="oppinion" value="good" checked>
-                <!--visually-hidden -->
+                <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="good" checked>
+                <span class="oppinion__radio" tabindex="1"></span>
                 <span class="oppinion__text">Скорее положительное</span>
               </label>
               <label class="oppinion__label">
-                <input class="oppinion__input" type="radio" name="oppinion" value="bad"> <!--visually-hidden -->
+                <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="bad"> <!--visually-hidden -->
+                <span class="oppinion__radio" tabindex="2"></span>
                 <span class="oppinion__text">Скорее отрицательные</span>
               </label>
               <label class="oppinion__label">
-                <input class="oppinion__input" type="radio" name="oppinion" value="nothing"> <!--visually-hidden -->
+                <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="nothing"> <!--visually-hidden -->
+                <span class="oppinion__radio" tabindex="3"></span>
                 <span class="oppinion__text">Затрудняюсь ответить</span>
               </label>
             </div>
           </fieldset>
 
           <fieldset class="main-form__visits visits main-form__registration">
-            <legend class="main-form__title visits__title">Посещенные достопримечательности </legend>
+            <legend class="main-form__title visits__title">Посещенные достопримечательности: </legend>
             <div class="visits__container">
               <label class="visits__label">
-                <input class="visits__input" type="checkbox" name="bridge" checked> <!--visually-hidden -->
+                <input class="visits__input visually-hidden" type="checkbox" name="bridge" checked> <!--visually-hidden -->
+                <span class="visits__checkbox" tabindex="4"></span>
                 <span class="visits__text">Мост Дьявола</span>
               </label>
               <label class="visits__label">
-                <input class="visits__input" type="checkbox" name="mountain" checked> <!--visually-hidden -->
+                <input class="visits__input visually-hidden" type="checkbox" name="mountain" checked> <!--visually-hidden -->
+                <span class="visits__checkbox" tabindex="5"></span>
                 <span class="visits__text">Гора-Колокол</span>
               </label>
               <label class="visits__label">
-                <input class="visits__input" type="checkbox" name="park" checked> <!--visually-hidden -->
+                <input class="visits__input visually-hidden" type="checkbox" name="park" checked> <!--visually-hidden -->
+                <span class="visits__checkbox" tabindex="6"></span>
                 <span class="visits__text">Слайд-парк</span>
               </label>
               <label class="visits__label">
-                <input class="visits__input" type="checkbox" name="cliff"> <!--visually-hidden -->
+                <input class="visits__input visually-hidden" type="checkbox" name="cliff"> <!--visually-hidden -->
+                <span class="visits__checkbox" tabindex="7"></span>
                 <span class="visits__text">Красные скалы</span>
               </label>
             </div>
