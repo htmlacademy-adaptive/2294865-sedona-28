@@ -140,12 +140,11 @@
 
 .advantages__image {
   grid-column: span 2;
-  //width: 100%
+  width: 100%;
   object-fit: cover;
 
   @media (min-width: @tablet-width) {
     grid-column: span 2;
-    width: 512px;
     height: 256px;
 
     &--reverse {
@@ -155,6 +154,26 @@
   }
 
   @media (min-width: desktop-width) {
+    width: 800px;
+  }
+}
+
+.advantages__picture {
+  grid-column: span 2;
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    grid-column: span 2;
+    height: 256px;
+
+    &--reverse {
+      grid-column: ~ "1/3";
+      grid-row: 1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
     width: 800px;
   }
 }
