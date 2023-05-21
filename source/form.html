@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicon/favicon.png">
+  <link rel="apple-touch-icon" href="./img/favicon/apple.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,7 +15,7 @@
   <div class="page__container">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img src="./img/logo.png" width="185" height="96" alt="Логотип Седоны.">
+        <img class="main-header__image" src="./img/logo.png" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -44,9 +47,9 @@
     </header>
 
     <main class="main-container">
-      <section class="hero">
+      <section class="hero hero--second">
         <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
-        <img class="hero__image" src="./img/sedona.svg" width="229" height="39"
+        <img class="hero__image hero__image--second" src="./img/sedona.svg" width="229" height="39"
           alt="Welcome to the gorgeous Sedona because the grand canyon sucks.">
       </section>
 
@@ -62,15 +65,21 @@
         <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="main-form__container">
             <fieldset class="main-form__registration main-form__name">
-              <legend class="main-form__title">Представьтесь:</legend>
-              <label class="main-form__label" for="name">Имя*:</label>
-              <input class="main-form__input input" type="text" id="name" name="name" placeholder="Пётр" required>
-              <label class="main-form__label" for="surname">Фамилия*:</label>
-              <input class="main-form__input input" type="text" id="surname" name="surname" placeholder="Пустота"
-                required>
-              <label class="main-form__label" for="patronymic">Отчество:</label>
-              <input class="main-form__input input" type="text" id="patronymic" name="patronymic"
-                placeholder="Викторович" required>
+              <legend class="main-form__title  main-form__represent">Представьтесь:</legend>
+              <p class="main-form__label-container">
+                <label class="main-form__label" for="name">Имя*:</label>
+                <input class="main-form__input input" type="text" id="name" name="name" placeholder="Пётр" required>
+              </p>
+              <p class="main-form__label-container">
+                <label class="main-form__label" for="surname">Фамилия*:</label>
+                <input class="main-form__input input" type="text" id="surname" name="surname" placeholder="Пустота"
+                  required>
+              </p>
+              <p class="main-form__label-container">
+                <label class="main-form__label" for="patronymic">Отчество:</label>
+                <input class="main-form__input input" type="text" id="patronymic" name="patronymic"
+                  placeholder="Викторович" required>
+              </p>
             </fieldset>
 
             <fieldset class="main-form__contacts contacts-detail main-form__registration">
@@ -87,41 +96,47 @@
           </div>
 
           <fieldset class="main-form__oppinion oppinion main-form__registration">
-            <legend class="main-form__title oppinion__title">Ваше общее впечатление </legend>
+            <legend class="main-form__title oppinion__title">Ваше общее впечатление: </legend>
             <div class="oppinion__container">
               <label class="oppinion__label">
-                <input class="oppinion__input" type="radio" name="oppinion" value="good" checked>
-                <!--visually-hidden -->
+                <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="good" checked>
+                <span class="oppinion__radio" tabindex="1"></span>
                 <span class="oppinion__text">Скорее положительное</span>
               </label>
               <label class="oppinion__label">
-                <input class="oppinion__input" type="radio" name="oppinion" value="bad"> <!--visually-hidden -->
+                <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="bad"> <!--visually-hidden -->
+                <span class="oppinion__radio" tabindex="2"></span>
                 <span class="oppinion__text">Скорее отрицательные</span>
               </label>
               <label class="oppinion__label">
-                <input class="oppinion__input" type="radio" name="oppinion" value="nothing"> <!--visually-hidden -->
+                <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="nothing"> <!--visually-hidden -->
+                <span class="oppinion__radio" tabindex="3"></span>
                 <span class="oppinion__text">Затрудняюсь ответить</span>
               </label>
             </div>
           </fieldset>
 
           <fieldset class="main-form__visits visits main-form__registration">
-            <legend class="main-form__title visits__title">Посещенные достопримечательности </legend>
+            <legend class="main-form__title visits__title">Посещенные<br>достопримечательности: </legend>
             <div class="visits__container">
               <label class="visits__label">
-                <input class="visits__input" type="checkbox" name="bridge" checked> <!--visually-hidden -->
+                <input class="visits__input visually-hidden" type="checkbox" name="bridge" checked> <!--visually-hidden -->
+                <span class="visits__checkbox" tabindex="4"></span>
                 <span class="visits__text">Мост Дьявола</span>
               </label>
               <label class="visits__label">
-                <input class="visits__input" type="checkbox" name="mountain" checked> <!--visually-hidden -->
+                <input class="visits__input visually-hidden" type="checkbox" name="mountain" checked> <!--visually-hidden -->
+                <span class="visits__checkbox" tabindex="5"></span>
                 <span class="visits__text">Гора-Колокол</span>
               </label>
               <label class="visits__label">
-                <input class="visits__input" type="checkbox" name="park" checked> <!--visually-hidden -->
+                <input class="visits__input visually-hidden" type="checkbox" name="park" checked> <!--visually-hidden -->
+                <span class="visits__checkbox" tabindex="6"></span>
                 <span class="visits__text">Слайд-парк</span>
               </label>
               <label class="visits__label">
-                <input class="visits__input" type="checkbox" name="cliff"> <!--visually-hidden -->
+                <input class="visits__input visually-hidden" type="checkbox" name="cliff"> <!--visually-hidden -->
+                <span class="visits__checkbox" tabindex="7"></span>
                 <span class="visits__text">Красные скалы</span>
               </label>
             </div>
@@ -164,7 +179,6 @@
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube.</span>
-                <!--Тут будет svg картинка-->
               </a>
             </li>
           </ul>

@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="./img/favicon/favicon.png">
+  <link rel="apple-touch-icon" href="./img/favicon/apple.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,7 +15,7 @@
   <div class="page__container">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img src="./img/logo.png" width="185" height="96" alt="Логотип Седоны.">
+        <img class="main-header__image" src="./img/logo.png" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="main-nav main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -44,9 +47,9 @@
     </header>
 
     <main class="main-container">
-      <section class="hero">
+      <section class="hero hero--second">
         <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
-        <img class="hero__image" src="./img/sedona.svg" width="229" height="39"
+        <img class="hero__image hero__image--second" src="./img/sedona.svg" width="229" height="39"
           alt="Welcome to the gorgeous Sedona because the grand canyon sucks.">
       </section>
 
@@ -58,9 +61,16 @@
             о политике и экономике.</p>
         </div>
         <ul class="gallery__list">
-          <li class="gallery__item card">
+          <li class="gallery__item  gallery__item--border card">
             <a class="card__link" href="#">
-              <img class="card__image" src="./img/photo-road.jpg" width="280" height="280" alt="Вид на дорогу.">
+              <picture class="card__picture">
+                <source media="(min-width: 1200px)"
+                  srcset="img/card/photo-1-desktop.jpg 1x, ./img/card/photo-1-desktop@x2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/card/photo-1-tablet.jpg 1x, ./img/card/photo-1-tablet@x2.jpg 2x">
+                <img class="card__image" src="./img/card/photo-1-mobile.jpg" srcset="img/card/photo-1-mobile@x2.jpg"
+                  width="280" height="280" alt="Вид на дорогу.">
+              </picture>
             </a>
             <div class="card__discription-container">
               <div class="card__title-container">
@@ -83,9 +93,16 @@
               </div>
             </div>
           </li>
-          <li class="gallery__item card">
+          <li class="gallery__item  gallery__item--border card">
             <a class="card__link" href="#">
-              <img class="card__image" src="./img/photo-plant.jpg" width="280" height="280" alt="Вид на растение.">
+              <picture class="card__picture">
+                <source media="(min-width: 1200px)"
+                  srcset="img/card/photo-2-desktop.jpg 1x, ./img/card/photo-2-desktop@x2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/card/photo-2-tablet.jpg 1x, ./img/card/photo-2-tablet@x2.jpg 2x">
+                <img class="card__image" src="./img/card/photo-2-mobile.jpg" srcset="img/card/photo-2-mobile@x2.jpg"
+                  width="280" height="280" alt="Вид на растение.">
+              </picture>
             </a>
             <div class="card__discription-container">
               <div class="card__title-container">
@@ -108,10 +125,18 @@
               </div>
             </div>
           </li>
-          <li class="gallery__item card">
+          <li class="gallery__item  gallery__item--border card">
             <a class="card__link" href="#">
-              <img class="card__image" src="./img/photo-road.jpg" width="280" height="280" alt="Вид на дорогу.">
+              <picture class="card__picture">
+                <source media="(min-width: 1200px)"
+                  srcset="img/card/photo-3-desktop.jpg 1x, ./img/card/photo-3-desktop@x2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/card/photo-3-tablet.jpg 1x, ./img/card/photo-3-tablet@x2.jpg 2x">
+                <img class="card__image" src="./img/card/photo-3-mobile.jpg" srcset="img/card/photo-3-mobile@x2.jpg"
+                  width="280" height="280" alt="Вид на растение.">
+              </picture>
             </a>
+
             <div class="card__discription-container">
               <div class="card__title-container">
                 <a class="card__link" href="#">
@@ -133,9 +158,16 @@
               </div>
             </div>
           </li>
-          <li class="gallery__item card">
+          <li class="gallery__item  gallery__item--border card">
             <a class="card__link" href="#">
-              <img class="card__image" src="./img/photo-canyon.jpg" width="280" height="280" alt="Вид на каньон.">
+              <picture class="card__picture">
+                <source media="(min-width: 1200px)"
+                  srcset="img/card/photo-4-desktop.jpg 1x, ./img/card/photo-4-desktop@x2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/card/photo-4-tablet.jpg 1x, ./img/card/photo-4-tablet@x2.jpg 2x">
+                <img class="card__image" src="./img/card/photo-4-mobile.jpg" srcset="img/card/photo-4-mobile@x2.jpg"
+                  width="280" height="280" alt="Вид на растение.">
+              </picture>
             </a>
             <div class="card__discription-container">
               <div class="card__title-container">
@@ -166,8 +198,13 @@
         <p class="video__discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
           раз!</p>
         <div class="video__container">
-          <!--Пока поставлю картинку самого видео файла не будет как я понял-->
-          <img class="video__picture" src="./img/video-mobile.jpg" width="280" height="177" alt="Видео.">
+          <picture class="card__picture">
+            <source media="(min-width: 1200px)"
+              srcset="img/card/video-desktop.jpg 1x, ./img/card/video-desktop@x2.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/card/video-tablet.jpg 1x, ./img/card/video-tablet@x2.jpg 2x">
+            <img class="video__picture" src="./img/card/video-mobile.jpg" srcset="img/card/video-mobile@x2.jpg"
+              width="280" height="177" alt="Вид на растение.">
+          </picture>
           <button class="video__start-button" type="button">
             <!--Тут будет svg картинка кнопки start (треугольник)-->
           </button>
