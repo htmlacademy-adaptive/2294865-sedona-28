@@ -1,0 +1,24 @@
+.iframe__section {
+  margin-bottom: 13px;
+  background-image: url("../img/advantages/mobile-map-mobile.jpg");
+  min-width: 320px;
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    background-image: url("../img/advantages/tablet-map-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/advantages/desktop-map-desktop.jpg");
+  }
+}
+
+.iframe__image {
+  border: none;
+  display: block;
+  width: 100%;
+}

@@ -1,3 +1,15 @@
+.services {
+  padding: 25px 0 46px;
+  text-align: left;
+  background-color: @base-color-white;
+  grid-column: 1 / -1;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    text-align: center;
+  }
+}
+
 .services__title {
   font-family: inherit;
   font-style: normal;
@@ -21,6 +33,11 @@
   line-height: 21px;
   margin: 0;
   text-transform: uppercase;
+  padding-right: 100px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+  }
 }
 
 .services__list {
@@ -30,10 +47,10 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
-    display: flex;
-    grid-column: ~ "1/ 1";
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: fit-content;
+    height: 100%;
   }
 }
 
@@ -69,7 +86,7 @@
       width: 77px;
       height: 77px;
       top: 60px;
-      left: 50%;
+      left: 54%;
       transform: translateX(-50%);
     }
   }

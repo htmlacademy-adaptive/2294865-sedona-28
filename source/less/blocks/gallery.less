@@ -1,20 +1,27 @@
 .gallery {
   text-align: center;
-}
-
-.gallery__container {
-  margin: 0 auto 16px;
-  max-width: 284px;
+  padding-top: 30px;
 
   @media (min-width: @tablet-width) {
-    width: 520px;
-    padding: 48px 0 56px;
-    margin: 0 auto;
+    padding-top: 62px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 59px;
-    padding-bottom: 44px;
+    padding: 0;
+    padding-top: 102px;
+  }
+}
+
+.gallery__container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #000000;
+  border-bottom: 1px solid #d6d6d6;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -25,6 +32,13 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  margin: 0 auto 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 33px;
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .gallery__discription {
@@ -34,6 +48,24 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 85px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 84px;
+    padding-left: 360px;
+    padding-right: 360px;
+  }
+}
+
+.gallery__discription br {
+  display: none;
 }
 
 .gallery__list {
@@ -44,7 +76,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     max-width: 648px;
-    grid-template-columns: repeat(2, 324px); //или лучше использовать fr?
+    grid-template-columns: repeat(2, 324px);
   }
 
   @media (min-width: @desktop-width) {
@@ -56,7 +88,7 @@
 
 .gallery__item:first-child {
   @media (min-width: @tablet-width) {
-    grid-column: ~"1 / -1";   //тут нужна помощь почти получилось выровнять
+    grid-column: ~"1 / -1"; //тут нужна помощь почти получилось выровнять
   }
 }
 

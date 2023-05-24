@@ -34,6 +34,11 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .video__discription {
@@ -43,6 +48,19 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 30px 5px 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-bottom: 85px;
+    margin-top: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 177px;
+    padding-right: 177px;
+  }
 }
 
 .video__picture {
@@ -54,4 +72,18 @@
   @media (min-width: @desktop-width) {
     width: 800px;
   }
+}
+
+.video__start-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 54px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  background-image: url("../img/video-start.svg");
+  background-repeat: no-repeat;
 }
