@@ -33,7 +33,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+            <a class="site-list__link  site-list__link--left" href="form.html">
               Форма и Отзывы
             </a>
           </li>
@@ -145,11 +145,11 @@
           <fieldset class="main-form__registration  main-form__registration--emotions emotions">
             <legend class="main-form__title emotions__title">Опишите свои эмоции:</legend>
             <label class="visually-hidden" for="comment-field">Ваши комментарии.</label>
-            <textarea class="emotions__text" name="comment" id="comment-field" rows="10"
+            <textarea class="emotions__text" name="comment" id="comment-field" rows="5"
               placeholder="Опишите подробно все свои восторги"></textarea> <!--rows поставил примерно-->
           </fieldset>
           <div class="main-form__button-container">
-            <button class="main-form__button" type="submit">Отправить отзыв</button>
+            <button class="main-form__button " type="submit">Отправить отзыв</button>
             <p class="main-form__rule">* — обязательные поля</p>
           </div>
         </form>
@@ -167,17 +167,27 @@
           <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <svg class="social__vk" width="24" height="14">
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
                 <span class="visually-hidden">Вконтакте.</span>
+
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacadem">
+              <a class="social__link" href="https://t.me/htmlacadem">
+                <svg class="social__tg" width="22" height="18">
+                  <use href="img/sprite.svg#tg"></use>
+                </svg>
                 <span class="visually-hidden">Телеграм.</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social__youtube" width="20" height="14">
+                  <use href="img/sprite.svg#youtube"></use>
+                </svg>
                 <span class="visually-hidden">Youtube.</span>
               </a>
             </li>
@@ -188,14 +198,36 @@
           <h2 class="visually-hidden">Ссылка на сайт разработчика.</h2>
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="35">
-              <path fill="black"
-                d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+            <svg class="copyright__icon" width="27" height="35">
+              <use href ="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </section>
       </div>
     </footer>
+  </div>
+
+  <div class="modal-container">  <!--requres modal-container--open to open modal window-->
+    <div class="modal-container__interior modal modal--failure"> <!--requres modal--open to open selected modal window-->
+      <section class="modal__content">
+        <h2 class="modal__title">что-то пошло не так</h2>
+        <p class="modal__text ">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button modal__button--short modal__button--small-text " type="button">ок</button>
+      </section>
+    </div>
+
+    <div class="modal-container__interior modal modal--success">
+      <section class="modal__content">
+        <div class="modal__divider">
+          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы
+            опубликуем его на сайте.</p>
+        </div>
+        <div class="modal__footer">
+          <button class="modal__button modal__button--small-text" type="button">Закрыть окно</button>
+        </div>
+      </section>
+    </div>
   </div>
   <script src="js/script.js"></script>
 </body>

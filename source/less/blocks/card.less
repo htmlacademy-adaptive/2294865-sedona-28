@@ -60,3 +60,31 @@
 .card__image {
   width: 100%;
 }
+
+.card__button {
+  display: inline-block;
+  width: 23px;
+  height: 21px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  opacity: 0.3;
+  background-image: url("../img/like.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/like-icon.svg");
+    opacity: 1;
+  }
+}
+
+.card__picture {
+  padding-bottom: 10px;
+}

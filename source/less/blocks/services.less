@@ -1,3 +1,15 @@
+.services {
+  padding: 25px 0 46px;
+  text-align: left;
+  background-color: @base-color-white;
+  grid-column: 1 / -1;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    text-align: center;
+  }
+}
+
 .services__title {
   font-family: inherit;
   font-style: normal;
@@ -21,6 +33,11 @@
   line-height: 21px;
   margin: 0;
   text-transform: uppercase;
+  padding-right: 100px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+  }
 }
 
 .services__list {
@@ -30,57 +47,106 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
-    display: flex;
-    grid-column: ~ "1/-1";
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: fit-content;
+    height: 100%;
   }
 }
 
 .services__item {
-  background-color: @base-color-white;
+  //background-color: @base-color-white;
   width: 100%;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 35px;
+
+  &:first-of-type {
+    margin-top: 35px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+    }
+  }
 
   &::before {
     content: "";
-    background-position: center;
-    background-repeat: no-repeat;
     position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -7px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
     display: block;
+
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      width: 77px;
+      height: 77px;
+      top: 60px;
+      left: 54%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    box-sizing: border-box;
+    margin-bottom: 55px;
+    padding: 160px 0 0 0;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 370px;
+    padding: 170px 0 0 0;
   }
 
   &--home::before {
-    width: 39px;
-    height: 37px;
+    background-size: 39px 37px;
     background-image: url("../img/icon-house.svg");
+
+    @media (min-width: @tablet-width) {
+      background-size: 75px 72px;
+    }
   }
 
   &--food::before {
-    width: 39px;
-    height: 37px;
+    background-size: 40px 35px;
     background-image: url("../img/icon-burger.svg");
+
+    @media (min-width: @tablet-width) {
+      background-size: 77px 68px;
+    }
   }
 
   &--souvenir::before {
-    width: 39px;
-    height: 37px;
+    background-size: 32px 38px;
     background-image: url("../img/icon-gift.svg");
+
+    @media (min-width: @tablet-width) {
+      background-size: 64px 75px;
+    }
   }
 }
 
-//.services__container {
-// width: 320px;
-//height: 191px;
-//left: 0;
+.services__container {
+  width: 320px;
+  min-height: 72px;
+  left: 0;
+  text-align: left;
 
-//@media (min-width: @tablet-width) {
-// width: 256px;
-// height: 331px;
-//}
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    min-height: 72px;
+    text-align: center;
+  }
 
-//@media (min-width: @desktop-width) {
-// width: 400px;
-// height: 330px;
-// padding-left: 40px;
-//}
-//}
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    min-height: 72px;
+    text-align: center;
+  }
+}
