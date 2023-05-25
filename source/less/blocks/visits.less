@@ -115,6 +115,18 @@
   width: 22px;
   height: 16px;
   color: rgb(119, 41, 28);
-  background-image: url("../img/form/tick.svg");
+  background-image: url("../img/tick.svg");
   content: "";
+}
+
+.visits__label:active .visits__checkbox::before {
+  opacity: 20%;
+}
+
+.visits__label:hover .visits__checkbox {
+  background-color: #e5e5e5;
+}
+
+.visits__label:active .visits__checkbox {
+  background-color: #d5d5d5;
 }

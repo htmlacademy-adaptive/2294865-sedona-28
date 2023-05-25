@@ -4,4 +4,28 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: 9px 12px 6px 0;
+}
+
+.copyright {
+  display: flex;
+  max-width: 129px;
+  text-align: center;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: @font-color-black;
+  text-decoration: none;
+
+  &:hover {
+    color: @base-color-blue;
+  }
+
+  &:active {
+    color: @font-color-black;
+    opacity: 0.3;
+  }
 }

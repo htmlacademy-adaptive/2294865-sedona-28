@@ -29,6 +29,25 @@
   &--current {
     color: #766357;
   }
+
+  &:hover {
+    background-color: @base-color-blue;
+
+    @media (min-width: @tablet-width) {
+      background-color: transparent;
+      color: #766357;
+    }
+  }
+
+  &:active {
+    background-color: @base-color-blue;
+    color: @base-color-white;
+
+    @media (min-width: @tablet-width) {
+      background-color: transparent;
+      color: #766357;
+    }
+  }
 }
 
 .site-list {
@@ -88,5 +107,4 @@
     min-width: 240px;
     box-shadow: none;
   }
-
 }

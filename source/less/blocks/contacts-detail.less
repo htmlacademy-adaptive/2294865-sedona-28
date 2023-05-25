@@ -26,7 +26,7 @@
       display: block;
       content: "";
       background-color: @font-color-grey-white;
-      background-image: url("../img/form/phone.svg");
+      background-image: url("../img/phone.svg");
       background-repeat: no-repeat;
       background-position: center;
       width: 58px;
@@ -48,7 +48,7 @@
       display: block;
       content: "";
       background-color: @font-color-grey-white;
-      background-image: url("../img/form/mail.svg");
+      background-image: url("../img/mail.svg");
       background-repeat: no-repeat;
       background-position: center;
       width: 58px;
@@ -77,6 +77,16 @@
 
   @media (min-width: @desktop-width) {
     width: 400px;
+  }
+
+  &:hover {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: none;
   }
 }
 

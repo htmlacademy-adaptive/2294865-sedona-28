@@ -67,6 +67,20 @@
   width: 280px;
   height: 58px;
 
+  &:hover {
+    background-color: @color-blue-hover;
+  }
+
+  &:active {
+    background-color: @color-blue-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @color-grey-hover;
+    color: @base-color-white;
+  }
+
   @media (min-width: @tablet-width) {
     margin-top: 0;
     width: 324px;
@@ -76,9 +90,6 @@
     width: 384px;
   }
 }
-
-
-//это временно потом стилизацию кнопок в отдельный класс закину
 
 .map__link-image {
   width: 100%;
