@@ -1,14 +1,16 @@
 .oppinion {
   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 15px;
-    background-color: #dbdbdb;
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 15px;
+      background-color: #dbdbdb;
+    }
   }
 }
 
