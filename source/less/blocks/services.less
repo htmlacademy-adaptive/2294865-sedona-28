@@ -17,7 +17,7 @@
   font-size: 18px;
   line-height: 26px;
   position: relative;
-  margin: 0 0 16px;
+  margin-top: -28px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
@@ -31,9 +31,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin: 0;
+  margin-bottom: 58px;
   text-transform: uppercase;
-  padding-right: 100px;
 
   @media (min-width: @tablet-width) {
     padding-right: 0;
@@ -59,14 +58,18 @@
   width: 100%;
   position: relative;
   padding-left: 50px;
-  margin-bottom: 35px;
+  //margin-bottom: 35px;
 
   &:first-of-type {
-    margin-top: 35px;
+    margin-top: 20px;
 
     @media (min-width: @tablet-width) {
       margin-top: 0;
     }
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 35px;
   }
 
   &::before {
@@ -74,11 +77,15 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    top: -7px;
+    top: -19px;
     left: 0;
     background-repeat: no-repeat;
     background-position: center;
     display: block;
+
+    &:nth-child(3) {
+      top: -10px;
+    }
 
     @media (min-width: @tablet-width) {
       content: "";
@@ -133,10 +140,10 @@
 }
 
 .services__container {
-  width: 320px;
   min-height: 72px;
   left: 0;
   text-align: left;
+  padding-top: 10px;
 
   @media (min-width: @tablet-width) {
     width: 256px;

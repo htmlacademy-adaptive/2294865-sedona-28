@@ -45,6 +45,12 @@
     line-height: 26px;
     margin-bottom: 30px;
   }
+
+  br {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .advantages__discription-intro {
@@ -55,6 +61,12 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+
+  br {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
 
 
@@ -65,6 +77,15 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  margin-top: 31px;
+
+  &--padding {
+    margin-top: -3px;
+  }
+
+  &--padding-second {
+    margin-top: -3px;
+  }
 
   &--white {
     color: @font-color-white;
@@ -79,6 +100,11 @@
   line-height: 21px;
   text-transform: uppercase;
 
+  br {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   &--white {
     color: @font-color-white;
@@ -91,6 +117,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin-top: -5px;
 
   &--white {
     color: @font-color-white;
@@ -148,8 +175,6 @@
     }
   }
 
-  // вроде как ложится верно но не туда похоже не понимаю что не так тут
-
   &--grey {
     background-color: @base-color-white-grey;
     padding-top: 24px;
@@ -191,10 +216,16 @@
   width: 100%;
   object-fit: cover;
   display: block;
+  margin-top: 28px;
+
+  &--padding {
+    margin-top: 24px;
+  }
 
   @media (min-width: @tablet-width) {
     grid-column: span 2;
     height: 256px;
+    margin: 0;
 
     &--reverse {
       grid-column: ~ "1/3";
