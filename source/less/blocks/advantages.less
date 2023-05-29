@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    padding-top: 48px;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -77,14 +77,11 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-top: 31px;
+  margin-top: 0;
 
-  &--padding {
-    margin-top: -3px;
-  }
-
-  &--padding-second {
-    margin-top: -3px;
+  @media (min-width: @tablet-width) {
+    max-width: 117px;
+    font-size: 21px;
   }
 
   &--white {
@@ -99,6 +96,11 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+
 
   br {
     @media (min-width: @tablet-width) {
@@ -149,7 +151,7 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    padding: 52px 33px 31px;
+    padding: 44px 33px 31px;
     max-width: 256px;
     max-height: 256px;
   }
@@ -172,6 +174,10 @@
       background-image: url("../img/white-copy.svg");
       background-repeat: no-repeat;
       background-position: top center;
+
+      .advantages__title {
+        margin-top: 31px;
+      }
     }
   }
 
@@ -183,7 +189,7 @@
 
   &--border {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 12px;
     color: #000000;
     border-bottom: 1px solid #d6d6d6;
 
