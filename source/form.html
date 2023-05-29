@@ -17,7 +17,7 @@
       <a class="main-header__logo" href="#">
         <img class="main-header__image" src="./img/logo.png" width="185" height="96" alt="Логотип Седоны.">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню навигации</span>
         </button>
@@ -146,7 +146,7 @@
             <legend class="main-form__title emotions__title">Опишите свои эмоции:</legend>
             <label class="visually-hidden" for="comment-field">Ваши комментарии.</label>
             <textarea class="emotions__text" name="comment" id="comment-field" rows="5"
-              placeholder="Опишите подробно все свои восторги"></textarea> <!--rows поставил примерно-->
+              placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="main-form__button-container">
             <button class="main-form__button " type="submit">Отправить отзыв</button>
@@ -196,9 +196,9 @@
 
         <section class="main-footer__copyright copyright">
           <h2 class="visually-hidden">Ссылка на сайт разработчика.</h2>
-          <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__icon" width="27" height="35">
+            <span class="copyright__text">Разработано</span>
+            <svg class="copyright__icon" width="28" height="35">
               <use href ="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>

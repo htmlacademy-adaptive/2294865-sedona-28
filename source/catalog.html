@@ -17,7 +17,7 @@
       <a class="main-header__logo" href="#">
         <img class="main-header__image" src="./img/logo.png" width="185" height="96" alt="Логотип Седоны.">
       </a>
-      <nav class="main-nav main-nav--closed  main-nav--nojs">
+      <nav class="main-nav main-nav--opened  main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню навигации</span>
         </button>
@@ -57,13 +57,19 @@
         <div class="gallery__container">
           <h2 class="visually-hidden">Галерея.</h2>
           <p class="gallery__title">Фото и видео </p>
-          <p class="gallery__discription">Не можете решиться на путешествие <br> из-за курса? Фотографии помогут вам забыть
+          <p class="gallery__discription">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+            забыть
             о политике и экономике.</p>
         </div>
         <ul class="gallery__list">
           <li class="gallery__item  gallery__item--border card">
             <a class="card__link" href="#">
               <picture class="card__picture">
+                <source type="img/webp" media="(min-width: 1200px)"
+                  srcset="img/card/photo-1-desktop.webp 1x, ./img/card/photo-1-desktop@x2.webp 2x">
+                <source type="img/webp" media="(min-width: 768px)"
+                  srcset="img/card/photo-1-tablet.webp 1x, ./img/card/photo-1-tablet@x2.webp 2x">
+                <source type="img/webp" srcset="./img/card/photo-1-mobile.webp 1x, img/card/photo-1-mobile@x2.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/card/photo-1-desktop.jpg 1x, ./img/card/photo-1-desktop@x2.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -90,11 +96,16 @@
           <li class="gallery__item  gallery__item--border card">
             <a class="card__link" href="#">
               <picture class="card__picture">
+                <source type="img/webp" media="(min-width: 1200px)"
+                  srcset="img/card/photo-2-desktop.webp 1x, ./img/card/photo-2-desktop@x2.webp 2x">
+                <source type="img/webp" media="(min-width: 768px)"
+                  srcset="img/card/photo-2-tablet.webp 1x, ./img/card/photo-2-tablet@x2.webp 2x">
+                <source type="img/webp" srcset="./img/card/photo-2-mobile.webp 1x, img/card/photo-2-mobile@x2.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/card/photo-2-desktop.jpg 1x, ./img/card/photo-2-desktop@x2.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/card/photo-2-tablet.jpg 1x, ./img/card/photo-2-tablet@x2.jpg 2x">
-                <img class="card__image" src="./img/card/photo-2-mobile.jpg" srcset="img/card/photo-2-mobile@x2.jpg"
+                <img class="card__image  card__image--small " src="./img/card/photo-2-mobile.jpg" srcset="img/card/photo-2-mobile@x2.jpg"
                   width="280" height="280" alt="Вид на растение.">
               </picture>
             </a>
@@ -116,11 +127,16 @@
           <li class="gallery__item  gallery__item--border card">
             <a class="card__link" href="#">
               <picture class="card__picture">
+                <source type="img/webp" media="(min-width: 1200px)"
+                  srcset="img/card/photo-3-desktop.webp 1x, ./img/card/photo-3-desktop@x2.webp 2x">
+                <source type="img/webp" media="(min-width: 768px)"
+                  srcset="img/card/photo-3-tablet.webp 1x, ./img/card/photo-3-tablet@x2.webp 2x">
+                <source type="img/webp" srcset="./img/card/photo-3-mobile.webp 1x, img/card/photo-3-mobile@x2.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/card/photo-3-desktop.jpg 1x, ./img/card/photo-3-desktop@x2.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/card/photo-3-tablet.jpg 1x, ./img/card/photo-3-tablet@x2.jpg 2x">
-                <img class="card__image" src="./img/card/photo-3-mobile.jpg" srcset="img/card/photo-3-mobile@x2.jpg"
+                <img class="card__image  card__image--small" src="./img/card/photo-3-mobile.jpg" srcset="img/card/photo-3-mobile@x2.jpg"
                   width="280" height="280" alt="Вид на растение.">
               </picture>
             </a>
@@ -143,11 +159,16 @@
           <li class="gallery__item  gallery__item--border card">
             <a class="card__link" href="#">
               <picture class="card__picture">
+                <source type="img/webp" media="(min-width: 1200px)"
+                  srcset="img/card/photo-4-desktop.webp 1x, ./img/card/photo-4-desktop@x2.webp 2x">
+                <source type="img/webp" media="(min-width: 768px)"
+                  srcset="img/card/photo-4-tablet.webp 1x, ./img/card/photo-4-tablet@x2.webp 2x">
+                <source type="img/webp" srcset="./img/card/photo-4-mobile.webp 1x, img/card/photo-4-mobile@x2.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/card/photo-4-desktop.jpg 1x, ./img/card/photo-4-desktop@x2.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/card/photo-4-tablet.jpg 1x, ./img/card/photo-4-tablet@x2.jpg 2x">
-                <img class="card__image" src="./img/card/photo-4-mobile.jpg" srcset="img/card/photo-4-mobile@x2.jpg"
+                <img class="card__image card__image--small" src="./img/card/photo-4-mobile.jpg" srcset="img/card/photo-4-mobile@x2.jpg"
                   width="280" height="280" alt="Вид на растение.">
               </picture>
             </a>
@@ -174,7 +195,12 @@
         <p class="video__discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
           раз!</p>
         <div class="video__container">
-          <picture class="card__picture">
+          <picture class="video__picture">
+            <source type="img/webp" media="(min-width: 1200px)"
+              srcset="img/card/video-desktop.webp 1x, ./img/card/video-desktop@x2.webp 2x">
+            <source type="img/webp" media="(min-width: 768px)"
+              srcset="img/card/video-tablet.webp 1x, ./img/card/video-tablet@x2.webp 2x">
+            <source type="img/webp" srcset="./img/card/video-mobile.webp 1x, img/card/video-mobile@x2.webp 2x">
             <source media="(min-width: 1200px)"
               srcset="img/card/video-desktop.jpg 1x, ./img/card/video-desktop@x2.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/card/video-tablet.jpg 1x, ./img/card/video-tablet@x2.jpg 2x">
@@ -182,7 +208,7 @@
               width="280" height="177" alt="Вид на растение.">
           </picture>
           <button class="video__start-button" type="button">
-            <!--Тут будет svg картинка кнопки start (треугольник)-->
+            <span class="visually-hidden">Кнопка старта</span>
           </button>
         </div>
       </section>
@@ -228,10 +254,10 @@
 
         <section class="main-footer__copyright copyright">
           <h2 class="visually-hidden">Ссылка на сайт разработчика.</h2>
-          <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__icon" width="27" height="35">
-              <use href ="img/sprite.svg#htmlacademy"></use>
+            <span class="copyright__text">Разработано</span>
+            <svg class="copyright__icon" width="28" height="35">
+              <use href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </section>

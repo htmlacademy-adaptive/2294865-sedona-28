@@ -1,5 +1,5 @@
 .card__title {
-  font-family: "PT Sans" "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -7,6 +7,7 @@
   color: @font-color-black;
   margin: 0;
   text-transform: uppercase;
+  margin-top: 15px;
 
   @media (min-width: @desktop-width) {
     color: @font-color-white;
@@ -14,24 +15,27 @@
 }
 
 .card__author {
-  font-family: "PT Sans" "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin-top: -1px;
 }
 
 .card__link {
   .link-style-reset();
 }
 
-.card__discription-container {    //тут меняется цвет в зависимости от устройства
+.card__discription-container {
+
+  //тут меняется цвет в зависимости от устройства
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 22px 20px 15px;
-    background-color: #f2f2f2;  //пока так потом variables добавлю
+    background-color: #f2f2f2; //пока так потом variables добавлю
   }
 
   @media (min-width: @desktop-width) {
@@ -46,19 +50,32 @@
   }
 }
 
-.card__title-container {   //контейнер с описаниями к фотографиям
+.card__title-container {
+  //контейнер с описаниями к фотографиям
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.card__button-container {   //контейнер с кнопкой
+.card__button-container {
+  //контейнер с кнопкой
   display: flex;
   align-items: center;
 }
 
 .card__image {
   width: 100%;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+
+  &--small {
+    @media (min-width: @tablet-width) {
+      height: 267px;
+    }
+  }
 }
 
 .card__button {
@@ -87,4 +104,8 @@
 
 .card__picture {
   padding-bottom: 10px;
+}
+
+.card__result {
+  margin-left: 10px;
 }

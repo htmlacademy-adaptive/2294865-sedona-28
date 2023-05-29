@@ -1,3 +1,19 @@
+.oppinion {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: -15px;
+      background-color: #dbdbdb;
+    }
+  }
+}
+
 .oppinion__text {
   font-family: "PT Sans" "Arial", sans-serif;
   font-style: normal;
@@ -29,7 +45,6 @@
   }
 }
 
-
 .oppinion__title {
   font-weight: 700;
   font-size: 18px;
@@ -39,6 +54,10 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     font-size: 21px;
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+    text-align: center;
   }
 }
 
@@ -95,4 +114,16 @@
   border-radius: 50%;
   content: "";
   transition: width 0.3s, height 0.3s;
+}
+
+.oppinion__label:active .oppinion__radio::before {
+  opacity: 20%;
+}
+
+.oppinion__label:hover .oppinion__radio {
+  background-color: #e5e5e5;
+}
+
+.oppinion__label:active .oppinion__radio {
+  background-color: #d5d5d5;
 }

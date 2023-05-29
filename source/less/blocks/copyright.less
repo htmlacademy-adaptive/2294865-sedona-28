@@ -1,7 +1,30 @@
 .copyright__text {
-  font-family: "PT Sans" "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: 13px 12px 10px 0;
+}
+
+.copyright {
+  display: flex;
+  text-align: center;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: @font-color-black;
+  text-decoration: none;
+
+  &:hover {
+    color: @base-color-blue;
+  }
+
+  &:active {
+    color: @font-color-black;
+    opacity: 0.3;
+  }
 }

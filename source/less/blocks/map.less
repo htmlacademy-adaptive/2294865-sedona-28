@@ -1,5 +1,5 @@
 .map {
-  padding: 38px 18px 49px;
+  padding: 41px 18px 49px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -26,15 +26,15 @@
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 32px;
-    font-size: 21px;
+    font-size: 30px;
     line-height: 26px;
   }
 }
@@ -47,7 +47,6 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  padding-top: 44px;
   margin: 0;
 }
 
@@ -60,25 +59,35 @@
   color: #ffffff;
   text-transform: uppercase;
   background: #82b3d3;
-  border-radius: 4px;
   border: none;
   cursor: pointer;
-  margin-top: 36px;
-  width: 280px;
+  margin: 0;
+  width: 284px;
   height: 58px;
+
+  &:hover {
+    background-color: @color-blue-hover;
+  }
+
+  &:active {
+    background-color: @color-blue-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @color-grey-hover;
+    color: @base-color-white;
+  }
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    width: 324px;
+    width: 458px;
   }
 
   @media (min-width: @desktop-width) {
     width: 384px;
   }
 }
-
-
-//это временно потом стилизацию кнопок в отдельный класс закину
 
 .map__link-image {
   width: 100%;

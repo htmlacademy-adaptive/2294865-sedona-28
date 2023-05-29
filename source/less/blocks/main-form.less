@@ -12,13 +12,12 @@
     padding-top: 0;
     width: 100%;
     max-width: 402px;
-    margin-left: 18px;
     font-size: 21px;
     margin-bottom: 31px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 41px;
+    //margin-left: 41px;
   }
 }
 
@@ -48,6 +47,16 @@
 
   @media (min-width: @desktop-width) {
     width: 430px;
+  }
+
+  &:hover {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: none;
   }
 }
 
@@ -102,6 +111,20 @@
   margin-top: 36px;
   width: 280px;
   height: 58px;
+
+  &:hover {
+    background-color: @color-blue-hover;
+  }
+
+  &:active {
+    background-color: @color-blue-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @color-grey-hover;
+    color: @base-color-white;
+  }
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
